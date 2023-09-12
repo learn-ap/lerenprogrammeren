@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+<h1>Datatype conversion</h1>
+<h2>number, parseFloat, parseInt</h2>
+<h3>var, let, const</h3>
+
+<p>Uitbreiding: wijzig de prompt naar een formulier.</p>
+
+<label for="">Enter your birthyear:</label>
+<input type="text" id="yearOfBirth">
+<label for="">>Hoeveel jaren wens je erbij te tellen?</label>
+<input type="text" id="numberOfYears">
+<button type="button" id="calculateYears">Submit</button>
+
+<p id="myResult"></p>
+
+
+
+
+
+<!--end html -->
+
+
+<!--begin javascript-->
+<script>
+
+
+    /* berekening van de html imput velden */
+    //1 hoe neem ik de inputvelden vast
+    //2 activeer de button
+    //3 input STRING een number maken
+    //4 result variable overbrengen naar een id,nl. myResult in uw html
+
+    document.getElementById("calculateYears").onclick = function(){
+        let yearOfBirth = document.getElementById("yearOfBirth").value;
+        let numberOfYears = document.getElementById("numberOfYears").value;
+        console.log(numberOfYears)
+        let result = Number(yearOfBirth)+Number(numberOfYears);
+        console.log(result);
+        document.getElementById("myResult").innerHTML = result;
+    }
+
+    //vragen van waar je de info opvraag,zoek / filter-zoeken aan de hand van een id/ dan wanneer je click
+
+
+
+    // let yearOfBirth = window.prompt("What is your birth year?");
+    // let aantalJaren = window.prompt("Hoeveel jaren wens je erbij te tellen?");
+    // yearOfBirth = Number(yearOfBirth)+Number(aantalJaren);
+    // convert string in nummer
+
+    // yearOfBirth = YearOfBirth + 1;
+
+
+    //yearOfBirth+=1; //verkorte schrijfwijze
+    // document.getElementById("myResult").innerHTML = yearOfBirth;
+    // console.log(yearOfBirth)
+
+
+
+
+</script>
+<!--end javascript-->
+</body>
+</html>

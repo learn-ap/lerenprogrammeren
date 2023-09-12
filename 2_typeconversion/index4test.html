@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+<h1>Datatype conversion</h1>
+<h2>number, parseFloat, parseInt</h2>
+<h3>var, let, const</h3>
+
+
+<input type="text" id="vakEen">
+<button type="button" id="add">add</button>
+<p id="myResult"></p>
+
+
+<!--end html -->
+
+
+<!--begin javascript-->
+<script>
+
+    //eerst zeggen we met let result te beginnen met nul,
+    // Domdat er geen begin cijfer was, er was letterlijk niets
+    let result = 0;
+    document.getElementById("add").onclick = function(){
+        result = result + Number(document.getElementById("vakEen").value);
+        document.getElementById("myResult").innerHTML = result;
+    }
+
+
+    /* berekening van de html imput velden */
+    //1 hoe neem ik de inputvelden vast
+    //2 activeer de button
+    //3 input STRING een number maken
+    //4 result variable overbrengen naar een id,nl. myResult in uw html
+
+
+
+    //vragen van waar je de info opvraag,zoek / filter-zoeken aan de hand van een id/ dan wanneer je click
+
+
+
+    // let yearOfBirth = window.prompt("What is your birth year?");
+    // let aantalJaren = window.prompt("Hoeveel jaren wens je erbij te tellen?");
+    // yearOfBirth = Number(yearOfBirth)+Number(aantalJaren);
+    // convert string in nummer
+
+    // yearOfBirth = YearOfBirth + 1;
+
+
+    //yearOfBirth+=1; //verkorte schrijfwijze
+    // document.getElementById("myResult").innerHTML = yearOfBirth;
+    // console.log(yearOfBirth)
+
+
+
+
+</script>
+<!--end javascript-->
+</body>
+</html>

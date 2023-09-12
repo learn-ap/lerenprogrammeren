@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="verschil"></p>
+
+<script>
+    let geboorteJaar = prompt("Vul uw geboortejaar in");
+    let lopendeJaar = prompt("Vul het lopende jaar in");
+    let leeftijd = Number(lopendeJaar) - Number(geboorteJaar);
+
+    if (leeftijd < 0) {
+        //je maakt nog een if en else in de vorige
+        console.log("fout")
+        } if (leeftijd >= 18) {
+           alert("yes");
+        } else {
+            alert("no");
+        }
+    }else{
+        alert("nope")
+    }
+</script>
+</body>
+</html>
