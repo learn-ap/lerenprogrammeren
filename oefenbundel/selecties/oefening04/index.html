@@ -9,24 +9,24 @@
 </head>
 <body>
 
-<p id="verschil"></p>
+
 
 <script>
     let geboorteJaar = prompt("Vul uw geboortejaar in");
     let lopendeJaar = prompt("Vul het lopende jaar in");
     let leeftijd = Number(lopendeJaar) - Number(geboorteJaar);
 
-    if (leeftijd < 0) {
-        //je maakt nog een if en else in de vorige
-        console.log("fout")
-        } if (leeftijd >= 18) {
-           alert("yes");
+    if (leeftijd >= 0) { //dit zorgt ervoor dat de berekening niet onder min gaat
+        //je maakt nog een if en else dat binnen de vorige zit
+        if (leeftijd >= 18) {
+            alert("yes");
         } else {
             alert("no");
         }
-    }else{
-        alert("nope")
+    } else{
+        alert("nope");
     }
+
 </script>
 </body>
 </html>
