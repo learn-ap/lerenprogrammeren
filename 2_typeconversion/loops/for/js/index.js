@@ -25,10 +25,10 @@
 
     //vraag je wilt tot 3 optellen dus "i<=3" om een limiet te zetten
     let som= 0;
-    for(let i=1;i<=3;i++){
-        let getal = Number(prompt("Geef getal ",i, "in:")); // "+" of ","
+    for(let i=1;i<=3;i++) {
+        let getal = Number(prompt("Geef getal ", i, "in:")); // "+" of ","
         som = som + getal;
-
-    //je zet de resultaat buiten op direct het juiste antwoord te krijgen anders telt hij per rij
-    //Let op <br> (voorbeeld:Number(prompt("Geef getal ",i, "in:<br>"));) kan gebruikt worden maar zal niet meer verder gaan!
-    document.write(som);}
+    }
+        //je zet de resultaat buiten op direct het juiste antwoord te krijgen anders telt hij per rij
+        //Let op <br> (voorbeeld:Number(prompt("Geef getal ",i, "in:<br>"));) kan gebruikt worden maar zal niet meer verder gaan!
+        document.write(som);
