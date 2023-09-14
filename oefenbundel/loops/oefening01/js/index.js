@@ -12,4 +12,4 @@ for(let i=1;i<=hoeveelGetallen;i++) {
     som = som + getal;
 }
 //zorg ervoor de uitkomst buiten de vorige actie uitgevoord word, check haakjes sluiten.
-document.write("Totale som is ", som);
+document.write("Totale som van ", hoeveelGetallen, "getallen is", som);
