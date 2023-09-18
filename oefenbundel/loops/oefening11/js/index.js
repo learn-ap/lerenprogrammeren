@@ -7,21 +7,21 @@
 
 
 let beginNr = 0;
-let conditieGetal = Number(prompt("geef een getal?"));
+//let conditieGetal = Number(prompt("geef een getal?"));
 //test
 let optelNr = 1;
 //test
 
-
-for (let i = beginNr; i <= conditieGetal; i++) {
+//for (let i = beginNr; i <= conditieGetal; i++) {
+for (let i = beginNr; i <= 7; i++) {
     let nieuweBeginNr = beginNr + optelNr;
-    document.write(`${nieuweBeginNr}, `);
+    if(i > 0){
+        document.write(`, `);
+    }
 //hier ga je de vorige var veranderen, zodat de loop begint met nieuwe cijfers
+    document.write(`${nieuweBeginNr} `);
     beginNr=optelNr;
     optelNr=nieuweBeginNr;
-
-
-
 }
 
 
