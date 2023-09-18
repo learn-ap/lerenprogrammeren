@@ -11,10 +11,17 @@ let conditieGetal = Number(prompt("geef een getal?"));
 //test
 let optelNr = 1;
 //test
-let nieuweBeginNr = beginNr + optelNr;
 
-for (let i = 1; i <= conditieGetal; i++) {
+
+for (let i = beginNr; i <= conditieGetal; i++) {
+    let nieuweBeginNr = beginNr + optelNr;
     document.write(`${nieuweBeginNr}, `);
+//hier ga je de vorige var veranderen, zodat de loop begint met nieuwe cijfers
+    beginNr=optelNr;
+    optelNr=nieuweBeginNr;
+
+
+
 }
 
 
