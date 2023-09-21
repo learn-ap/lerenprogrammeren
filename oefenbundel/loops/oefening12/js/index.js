@@ -6,6 +6,7 @@ for (let i = 1; i <= 30; i++) //die kleiner dan getal mss veranderen?
     som1 = getal1%i;
     som2 = getal2%i;
 
+
     if (som1>0) {
         som1 = getal1%i;
         som2 = getal2%i;
