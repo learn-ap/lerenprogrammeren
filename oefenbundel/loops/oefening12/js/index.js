@@ -1,7 +1,7 @@
 let getal1 = Number(prompt('Geef een getal'));
 let getal2 = Number(prompt('Geef een 2de getal'));
 
-for (let i = 1; i <= 30; i++) //die kleiner dan getal mss veranderen?
+for (let i = 1; i <= getal2; i++) //die kleiner dan getal mss veranderen?
 {
     som1 = getal1%i;
     som2 = getal2%i;

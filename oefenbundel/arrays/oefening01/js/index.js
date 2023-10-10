@@ -1,30 +1,18 @@
-let cursisten = ['Tom','Tim','bart','Els'];
-//let cursisten = new Array('Tom';'Tim','bart','Els');
-let cursusJaar = ['2017','2018','2019','2020','2021','2022','2023'];
 
-document.write(cursisten);
-document.write(cursisten[0]);
-document.write(cursisten[3]);
-document.write(cursisten[4]);
-cursisten[0]='Pieter'; //je vervangt nul met Pieter
-document.write(cursisten);
 
-//hoe je de lengte ( van een geindexeerd vind
-document.write(cursisten.length);
+let teller = 0;
+let getal = 0;
+var getallenReeks = [];
 
-//toevoegen van een cursist
-cursisten.push('Marieke');
-document.write(cursisten);
-document.write(cursisten[4]);
+while(getal >= 0){
 
-//cursist toevoegen aan het begin ?er tussen in schuiven?
-cursisten.shift('Thomas');
-document.write(cursisten);
+    getallenReeks.push(Number(prompt(`Geef getal ${teller+1} in:`)));// ${teller+1} is de auto nummering, teller word van null naar 1, kan ook zonder
+    getal = getallenReeks[teller]; // het 0-getal word vervangen met wat in de array is gestoken en op dat moment word de 0-vak nummer opgevraagd
 
-//cursist verwijderen (eerste)
-cursisten.shift();
-document.write(cursisten);
-
-//index of plaatsbepaling van items in een geindexeerd (numerieke of geindexeerde geindexeerd
-//LET OP als er meerdere dezelfde naam heeft, zoekt hij niet meer verder
-document.write(cursisten.indexOf('Bart'));
+    teller++;
+}
+// je vraagt het vakje-nr.
+hoeveelsteGetal = Number(prompt('Het hoeveelste getal wens je te zien?'));
+// deze var hoeveelsteGetal verandert naar het nr  van  het vakje
+hoeveelsteGetal = getallenReeks[hoeveelsteGetal-1];// omdat normale mensen van 1 tellen, moeten we min doen zodat ze de juiste vak opvragen
+document.write(hoeveelsteGetal);
